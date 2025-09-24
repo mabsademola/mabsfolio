@@ -2,6 +2,7 @@
 
 import { z } from 'zod';
 import { Resend } from 'resend';
+import { personalInfo } from '@/lib/data';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -17,8 +18,6 @@ type ContactFormState = {
   success: boolean;
 };
 
-// This is a placeholder for a real email sending implementation.
-// In a real app, you would use a service like Resend, SendGrid, or Nodemailer.
 export async function submitContactForm(
   prevState: ContactFormState,
   formData: FormData
@@ -42,28 +41,30 @@ export async function submitContactForm(
   
   const { name, email, message } = validatedFields.data;
 
-  // In a real app, you'd use an email sending service here.
-  // For example, with Resend:
-  // const resend = new Resend(process.env.RESEND_API_KEY);
-  // try {
-  //   await resend.emails.send({
-  //     from: 'onboarding@resend.dev',
-  //     to: 'mabsademola@gmail.com',
-  //     subject: `New message from ${name} via your portfolio`,
-  //     text: `From: ${email}\n\n${message}`,
-  //   });
-  // } catch (error) {
-  //   console.error('Email sending failed:', error);
-  //   return {
-  //     message: 'Failed to send message. Please try again later.',
-  //     success: false,
-  //   };
-  // }
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  try {
+    const { data, error } = await resend.emails.send({
+      from: 'Portfolio Contact <onboarding@resend.dev>',
+      to: personalInfo.email,
+      subject: `New message from ${name} via your portfolio`,
+      text: `From: ${email}\n\n${message}`,
+    });
 
-  console.log('Contact form submitted:');
-  console.log({ name, email, message });
-  
-  await new Promise(res => setTimeout(res, 1000));
+    if (error) {
+      console.error('Email sending failed:', error);
+      return {
+        message: 'Failed to send message. Please try again later.',
+        success: false,
+      };
+    }
+
+  } catch (error) {
+    console.error('Email sending failed:', error);
+    return {
+      message: 'Failed to send message. Please try again later.',
+      success: false,
+    };
+  }
 
   return {
     message: "Thanks for reaching out! I'll get back to you soon.",

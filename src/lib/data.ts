@@ -266,17 +266,6 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
         { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
-
-  {
-    id: 'ultaininity',
-    description: 'A suite of blockchain-based fintech apps, including a crypto launchpad and an NFT marketplace, built with a focus on security.',
-    imageHint: 'blockchain crypto',
-    tech: ['Flutter', 'Blockchain', 'Solidity'],
-    image: PlaceHolderImages.find((p) => p.id === 'ultaininity')!,
-    links: [
-        { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
-    ],
-  },
   {
     id: 'cazuba',
     description:
@@ -298,8 +287,7 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
     ],
     image: PlaceHolderImages.find((p) => p.id === 'cazuba')!,
     links: [
-      { name: 'Android', url: 'https://play.google.com/store/apps/details?id=com.cazuba.android', icon: LinkIcon },
-      { name: 'iOS', url: 'https://apps.apple.com/app/cazuba/id1234567890', icon: Apple },
+      { name: 'Watch Demo', url: "https://drive.google.com/file/d/1JblX-8WyMw4KNoh1GyjWlLv4xISmi3Zk/view?usp=drive_link", icon: LinkIcon },
     ],
   },
   
@@ -320,6 +308,7 @@ export const navLinks = [
   { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Testimonials', href: '#testimonials'},
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -336,4 +325,54 @@ export const contactDetails = [
     icon: Phone,
     href: `tel:${personalInfo.phone}`
   },
-]
+];
+
+type Testimonial = {
+  name: string;
+  title: string;
+  avatar: Omit<ImagePlaceholder, 'id' | 'description'>;
+  quote: string;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    name: 'Ahmad Al-Fahad',
+    title: 'CEO, Hafar Social',
+    avatar: {
+      imageUrl: 'https://picsum.photos/seed/1/100/100',
+      imageHint: 'male headshot'
+    },
+    quote:
+      "Mabs is a rare talent. He single-handedly transformed our early prototype into a production-ready platform that now serves over 40,000 users. His technical leadership, from backend architecture to mobile development, was instrumental in our success. He's a true full-stack powerhouse.",
+  },
+  {
+    name: 'Jana Saleh',
+    title: 'Product Manager, Dumyah',
+    avatar: {
+      imageUrl: 'https://picsum.photos/seed/2/100/100',
+      imageHint: 'female headshot'
+    },
+    quote:
+      "Working with Mabs was a fantastic experience. His contributions to the Dumyah app were critical in helping us scale to 100,000+ users. He's a proactive problem-solver and a great communicator, always focused on delivering a high-quality product.",
+  },
+  {
+    name: 'David Lee',
+    title: 'CTO, Terkuaz Software',
+    avatar: {
+      imageUrl: 'https://picsum.photos/seed/3/100/100',
+      imageHint: 'male headshot'
+    },
+    quote:
+      "Mabs's expertise in Flutter and Clean Architecture was a game-changer for our on-demand service apps. He not only led the development but also mentored the team, raising the bar for code quality and maintainability across the board.",
+  },
+  {
+    name: 'Fatima Ahmed',
+    title: 'Lead Designer, Sellio',
+    avatar: {
+      imageUrl: 'https://picsum.photos/seed/4/100/100',
+      imageHint: 'female headshot'
+    },
+    quote:
+      "As a founder, Mabs has a unique ability to bridge the gap between technical implementation and user experience. He brought the vision for Sellio to life with a beautiful and functional platform that users loved from day one.",
+  },
+];
