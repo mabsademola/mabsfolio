@@ -35,7 +35,7 @@ export const personalInfo = {
     },
   ],
   summary:
-    "Senior Flutter Developer with over five years of experience building and scaling cross-platform mobile applications for Android, iOS, and Web. Proven track record of building and maintaining apps currently serving 70,000+ registered users and 10,000+ daily actives. Experienced in leading end-to-end development within startups and distributed teams, applying modern software architecture principles to create secure, maintainable, and high-performing applications. Skilled at bridging mobile and backend systems to ensure reliable, scalable product delivery.",
+    "A results-driven Senior Flutter Developer with over five years of expertise in architecting and scaling cross-platform mobile applications. With a strong history of leading development in startup environments, I have a proven ability to deliver high-quality, maintainable, and high-performing applications from concept to launch. My focus is on applying modern software architecture to build secure and scalable systems that bridge mobile and backend services effectively.",
 };
 
 type SkillCategory = {
@@ -92,28 +92,28 @@ export const experience = [
     role: 'Tech Lead | Senior Flutter Developer',
     duration: 'Oct 2023 – Present',
     description:
-      'Led end-to-end development of the Hafar mobile app, scaling it to 70,000+ users. Architected the app using Feature-First Clean Architecture, migrated millions of records from Firebase, and implemented CI/CD pipelines that reduced release cycles by 60%.',
+      'Engineered and scaled the Hafar mobile app, growing the user base to over 70,000. Architected the application using a Feature-First Clean Architecture, executed a seamless migration of millions of records from Firebase, and implemented robust CI/CD pipelines, which decreased release cycles by 60%.',
   },
   {
     company: 'Sellio',
     role: 'Founder & Lead Flutter Developer',
     duration: 'Apr 2024 – Dec 2024',
     description:
-      'Founded and developed a hybrid social e-commerce platform. Built the Flutter front-end for Android, iOS, and Web, achieving 2,000+ user sign-ups within six months through organic growth and user-centric design.',
+      'Conceptualized and developed a hybrid social e-commerce platform from the ground up. Led the front-end development for Android, iOS, and Web using Flutter, acquiring over 2,000 users in the first six months through strategic, user-centric design and organic growth initiatives.',
   },
   {
     company: 'Terkuaz Software Solution',
     role: 'Lead Flutter Developer',
     duration: 'Jan 2023 – May 2024',
     description:
-      'Mentored and managed a team of Flutter developers, building two core on-demand service products (Click & Click Provider) from the ground up. Architected both apps using Clean Architecture with GetX and Dartz for robust, scalable codebases.',
+      'Led and mentored a team of developers in building two flagship on-demand service applications (Click & Click Provider). I established the architectural foundation using Clean Architecture with GetX and Dartz, ensuring the development of a scalable and maintainable codebase.',
   },
   {
     company: 'Ultaininity Global Group',
     role: 'Flutter Developer',
     duration: 'Apr 2022 – Oct 2022',
     description:
-      'Developed blockchain-based fintech applications, including a launchpad and an NFT marketplace. Focused on creating secure, high-performance apps, achieving 99% crash-free sessions through rigorous testing and optimization.',
+      'Contributed to the development of blockchain-based fintech applications, including a launchpad and NFT marketplace. My primary focus was on creating secure, high-performance mobile apps, successfully achieving a 99% crash-free session rate through meticulous testing and performance optimization.',
   },
 ];
 
