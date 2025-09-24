@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hafar",
+      "description": "Hafar social dating app showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1689872330350-87e38c591b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2NpYWwlMjBhcHB8ZW58MHx8fHwxNzU4NjM5OTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social app"
+    },
+    {
+      "id": "sellio",
+      "description": "Sellio social commerce platform showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1688561807403-ba262590f86f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjBzdG9yZXxlbnwwfHx8fDE3NTg3MjExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce store"
+    },
+    {
+      "id": "click",
+      "description": "Click on-demand services platform showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1758556549027-879615701c61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZXJ2aWNlJTIwYm9va2luZ3xlbnwwfHx8fDE3NTg3MzU0Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "service booking"
+    },
+    {
+      "id": "dumyah",
+      "description": "Dumyah online shopping app showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1664455340023-214c33a9d0bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvbmxpbmUlMjBzaG9wcGluZ3xlbnwwfHx8fDE3NTg3MjQzNzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online shopping"
+    },
+    {
+      "id": "ultaininity",
+      "description": "Ultaininity blockchain fintech app showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1620778187276-ea6c138e8b94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxibG9ja2NoYWluJTIwY3J5cHRvfGVufDB8fHx8MTc1ODczNTQzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blockchain crypto"
+    },
+    {
+      "id": "primetag",
+      "description": "Primetag IT solutions app showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1633365088446-9e0d76f54ce5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjB3ZWJzaXRlfGVufDB8fHx8MTc1ODcxMzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate website"
+    }
+  ]
 }
