@@ -30,12 +30,12 @@ const HeroSection = () => {
         <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
           <Button asChild size="lg" variant="outline" className="font-bold">
             <Link href="/placeholder-resume.pdf" target="_blank" download="Mabs-Ademola-Resume.pdf">
-              <Download className="mr-2 h-5 w-5" /> Download Resume
+              <Download className="mr-2 h-5 w-5" /> Frontend Engineer Resume (Flutter)
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="font-bold">
             <Link href="/placeholder-cv.pdf" target="_blank" download="Mabs-Ademola-CV.pdf">
-              <Download className="mr-2 h-5 w-5" /> Download CV (Detailed)
+              <Download className="mr-2 h-5 w-5" /> Backend Engineer Resume (Django / Full-Stack)
             </Link>
           </Button>
         </div>
