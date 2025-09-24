@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { personalInfo } from '@/lib/data';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -24,6 +24,18 @@ const HeroSection = () => {
           <Button asChild size="lg" variant="outline" className="font-bold">
             <Link href="#projects">
               View My Work <ArrowDown className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
+          <Button asChild size="lg" variant="outline" className="font-bold">
+            <Link href="/placeholder-resume.pdf" target="_blank" download="Mabs-Ademola-Resume.pdf">
+              <Download className="mr-2 h-5 w-5" /> Download Resume
+            </Link>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="font-bold">
+            <Link href="/placeholder-cv.pdf" target="_blank" download="Mabs-Ademola-CV.pdf">
+              <Download className="mr-2 h-5 w-5" /> Download CV (Detailed)
             </Link>
           </Button>
         </div>
