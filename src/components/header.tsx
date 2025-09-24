@@ -6,7 +6,8 @@ import { Menu, X, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { personalInfo, navLinks } from '@/lib/data';
+import { navLinks } from '@/lib/data';
+import { ThemeToggle } from './theme-toggle';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -82,22 +83,25 @@ const Header = () => {
             <Code2 className="w-7 h-7 text-primary" />
             <span>Mabsfolio</span>
           </Link>
-          <nav className="hidden md:flex items-center space-x-4">
-            {navContent}
-          </nav>
-          <div className="md:hidden">
-            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right">
-                <nav className="flex flex-col space-y-4 mt-8">
-                  {navContent}
-                </nav>
-              </SheetContent>
-            </Sheet>
+          <div className="flex items-center gap-2">
+            <nav className="hidden md:flex items-center space-x-4">
+              {navContent}
+            </nav>
+            <ThemeToggle />
+            <div className="md:hidden">
+              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right">
+                  <nav className="flex flex-col space-y-4 mt-8">
+                    {navContent}
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </div>
