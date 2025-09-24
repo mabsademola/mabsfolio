@@ -37,7 +37,7 @@ const ProjectsSection = () => {
                     ))}
                   </div>
                 </div>
-                <div className="flex gap-2 mt-4">
+                <div className="flex flex-wrap gap-2 mt-4">
                   {project.links.map((link) => (
                      <Button asChild variant={link.name === 'Live App' ? 'default' : 'outline'} size="sm" key={link.url}>
                         <Link href={link.url} target="_blank" rel="noopener noreferrer">

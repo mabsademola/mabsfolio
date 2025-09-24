@@ -9,12 +9,12 @@ const ExperienceSection = () => {
         <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center mb-12">
           Work Experience
         </h2>
-        <div className="relative max-w-3xl mx-auto">
+        <div className="relative max-w-5xl mx-auto">
           <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-border"></div>
           {experience.map((item, index) => (
             <div key={index} className="relative mb-12">
               <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-4 w-4 h-4 bg-primary rounded-full border-4 border-secondary"></div>
-              <div className={`flex justify-center ${index % 2 === 0 ? 'lg:justify-start' : 'lg:justify-end'}`}>
+              <div className={`flex items-start ${index % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
                 <div className="w-full lg:w-[calc(50%-2rem)]">
                   <Card className="shadow-lg">
                     <CardHeader>

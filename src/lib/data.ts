@@ -11,8 +11,10 @@ import {
   Mail,
   Phone,
   type LucideIcon,
-  Link,
+  Link as LinkIcon,
   GitBranch,
+  Apple,
+  AppWindow,
 } from 'lucide-react';
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
@@ -118,10 +120,10 @@ export const skills: SkillCategory[] = [
 export const experience = [
   {
     company: 'OrosTech (Hafar Social)',
-    role: 'Tech Lead | Senior Flutter Developer',
+    role: 'Tech Lead | Senior Flutter & Backend Engineer',
     duration: 'Oct 2023 – Present',
     description:
-      'Engineered and scaled the Hafar mobile app, growing the user base to over 70,000. Architected the application using a Feature-First Clean Architecture, executed a seamless migration of millions of records from Firebase, and implemented robust CI/CD pipelines, which decreased release cycles by 60%.',
+      'Led the end-to-end technical evolution of Hafar Social from its early Firebase-based prototype into a scalable production platform now serving over 40,000 active users. Orchestrated a zero-loss migration of millions of records from Firebase Firestore and MongoDB to a robust Django + PostgreSQL infrastructure, ensuring long-term scalability and reliability. Designed and implemented high-traffic server architectures capable of processing 20,000+ daily data transfer requests between mobile and backend systems. Beyond engineering, I established technical roadmaps, mentored new developers, and spearheaded feature planning including AI-driven integrations positioning the platform for continued growth and resilience in a high-demand startup environment.'
   },
   {
     company: 'Sellio',
@@ -158,7 +160,7 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
     tech: ['Flutter', 'Django', 'PostgreSQL', 'Firebase', 'CI/CD'],
     image: PlaceHolderImages.find((p) => p.id === 'hafar')!,
     links: [
-        { name: 'Live App', url: 'https://play.google.com/store/apps/details?id=com.orostech.hafar', icon: Link },
+        { name: 'Live App', url: 'https://play.google.com/store/apps/details?id=com.orostech.hafar', icon: LinkIcon },
         { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
@@ -169,7 +171,7 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
     tech: ['Flutter', 'Django', 'AWS S3', 'Firebase'],
     image: PlaceHolderImages.find((p) => p.id === 'sellio')!,
     links: [
-        { name: 'Live App', url: 'https://selliohub.com', icon: Link },
+        { name: 'Web App', url: 'https://selliohub.com', icon: AppWindow },
         { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
@@ -180,7 +182,8 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
     tech: ['Flutter', 'GetX', 'Firebase', 'Google Maps API'],
     image: PlaceHolderImages.find((p) => p.id === 'click')!,
     links: [
-        { name: 'Live App', url: 'https://play.google.com/store/apps/dev?id=6849906487342895588', icon: Link },
+        { name: 'Android', url: 'https://play.google.com/store/apps/dev?id=6849906487342895588', icon: Smartphone },
+        { name: 'iOS', url: '#', icon: Apple },
         { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
@@ -191,7 +194,7 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
     tech: ['Flutter', 'Firebase', 'REST APIs'],
     image: PlaceHolderImages.find((p) => p.id === 'dumyah')!,
     links: [
-        { name: 'Live App', url: 'https://play.google.com/store/apps/details?id=com.dumyah.android', icon: Link },
+        { name: 'Live App', url: 'https://play.google.com/store/apps/details?id=com.dumyah.android', icon: LinkIcon },
         { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
