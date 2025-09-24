@@ -3,7 +3,7 @@
     {
       "id": "hafar",
       "description": "Hafar social dating app showcase",
-      "imageUrl": "https://play-lh.googleusercontent.com/sROlsc5iLeAvvNAsV6uMtk3RAOOTyOLSOaj-TR3U0I7oD3xYJrElfI1DxtQPjZ6DSfrv=s96-rw",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQEsK70_kc0oMw/company-logo_100_100/company-logo_100_100/0/1733203517983?e=1761782400&v=beta&t=-c6C6S9UzzBIg8tVEKcbAAtNEzBX39ScylofLq4_XVg",
       "imageHint": "social app"
     },
     {
@@ -15,7 +15,7 @@
     {
       "id": "sellio",
       "description": "Sellio social commerce platform showcase",
-      "imageUrl": "https://images.unsplash.com/photo-1688561807403-ba262590f86f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjBzdG9yZXxlbnwwfHx8fDE3NTg3MjExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGSiqSP-KlnGg/company-logo_100_100/company-logo_100_100/0/1731996485356/selliohub_logo?e=1761782400&v=beta&t=J2J1il2rKjCuiMMq5R11MHShP1cadPxWuAz_pg6nMw0",
       "imageHint": "ecommerce store"
     },
     {
@@ -35,6 +35,12 @@
       "description": "Primetag IT solutions app showcase",
       "imageUrl": "https://images.unsplash.com/photo-1633365088446-9e0d76f54ce5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjB3ZWJzaXRlfGVufDB8fHx8MTc1ODcxMzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "corporate website"
+    },
+    {
+      "id": "cazuba",
+      "description": "This is social messaging app that was developed and equipped with essential features to enhance your communication experience.",
+      "imageUrl": "https://images.unsplash.com/photo-1657256031858-148906b82ab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtZXNzYWdpbmclMjBhcHB8ZW58MHx8fHwxNzU4NzQ4MjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "messaging app"
     }
   ]
 }

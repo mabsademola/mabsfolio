@@ -153,18 +153,6 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
   links: { name: string; url: string, icon: LucideIcon }[];
   image: ImagePlaceholder;
 })[] = [
-  // {
-  //   id: 'hafar',
-  //   description: 'A social dating app scaled to 70k+ users with a feature-rich experience including real-time chat and profile matching.',
-  //   imageHint: 'social app',
-  //   tech: ['Flutter', 'Django', 'PostgreSQL', 'Firebase', 'CI/CD'],
-  //   image: PlaceHolderImages.find((p) => p.id === 'hafar')!,
-  //   links: [
-  //       { name: 'Android', url: 'https://play.google.com/store/apps/details?id=com.orostech.hafar', icon: Smartphone },
-  //       { name: 'Web App', url: 'https://joinhafar.com', icon: AppWindow },
-  //       // { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
-  //   ],
-  // },
   {
     id: 'hafar',
     description:
@@ -214,30 +202,6 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
       // { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
-  
-  {
-    id: 'sellio',
-    description: 'A social commerce platform I founded, combining social feeds with a full e-commerce marketplace for a seamless user journey.',
-    imageHint: 'ecommerce store',
-    tech: ['Flutter', 'Django', 'AWS S3', 'Firebase'],
-    image: PlaceHolderImages.find((p) => p.id === 'sellio')!,
-    links: [
-        { name: 'Web App', url: 'https://selliohub.com', icon: AppWindow },
-        { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
-    ],
-  },
-  {
-    id: 'click',
-    description: 'An on-demand services platform connecting users with local service providers, similar to Uber but for a wide range of services.',
-    imageHint: 'service booking',
-    tech: ['Flutter', 'GetX', 'Firebase', 'Google Maps API'],
-    image: PlaceHolderImages.find((p) => p.id === 'click')!,
-    links: [
-        { name: 'Android', url: 'https://play.google.com/store/apps/dev?id=6849906487342895588', icon: Smartphone },
-        { name: 'iOS', url: '#', icon: Apple },
-        { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
-    ],
-  },
   {
     id: 'dumyah',
     description:
@@ -261,6 +225,48 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
       { name: 'iOS', url: 'https://apps.apple.com/in/app/dumyah/id1590736513', icon: Apple },
     ],
   },
+  
+  {
+    id: 'sellio',
+    description:
+      'Founded and led the development of Sellio, a social commerce platform blending the social engagement of Instagram with the marketplace power of Amazon. Designed and implemented the full-stack system using Flutter (mobile + web) and Django REST, backed by a scalable AWS infrastructure. Integrated SES, S3, RDS (PostgreSQL), EC2, and CloudFront to support media delivery, payments, and notifications at scale. Deployed frontend web assets via Firebase Hosting for rapid iteration. Within 3 weeks of launch, the platform gained over 500 signups, validating strong product-market fit.',
+    imageHint: 'ecommerce store',
+    tech: [
+      'Flutter (Mobile & Web)',
+      'In-App Purchases',
+      'RevenueCat',
+      'Django REST Framework',
+      'PostgreSQL',
+      'AWS S3 (media storage)',
+      'AWS RDS (database)',
+      'AWS SES (transactional emails)',
+      'AWS EC2 (compute)',
+      'AWS CloudFront (CDN)',
+      'CI/CD (GitHub Actions)',
+      'Firebase Hosting (frontend deployment)',
+      'Payment Integration',
+      'Authentication & Authorization (JWT, OAuth2)',
+    ],
+    image: PlaceHolderImages.find((p) => p.id === 'sellio')!,
+    links: [
+      { name: 'Web App', url: 'https://sellio-bdb56.web.app/', icon: AppWindow },
+      { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
+    ],
+  },
+  
+  {
+    id: 'click',
+    description: 'An on-demand services platform connecting users with local service providers, similar to Uber but for a wide range of services.',
+    imageHint: 'service booking',
+    tech: ['Flutter', 'GetX', 'Firebase', 'Google Maps API'],
+    image: PlaceHolderImages.find((p) => p.id === 'click')!,
+    links: [
+        { name: 'Android', url: 'https://play.google.com/store/apps/dev?id=6849906487342895588', icon: Smartphone },
+        { name: 'iOS', url: '#', icon: Apple },
+        { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
+    ],
+  },
+
   {
     id: 'ultaininity',
     description: 'A suite of blockchain-based fintech apps, including a crypto launchpad and an NFT marketplace, built with a focus on security.',
@@ -271,6 +277,32 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
         { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
+  {
+    id: 'cazuba',
+    description:
+      'Developed Cazuba, a feature-rich social messaging app inspired by WhatsApp, built to deliver fast, reliable, and secure communication. Core features included real-time 1:1 and group messaging, scheduled messages, and multimedia sharing, along with integrated audio/video calling. Implemented contact syncing and Google Maps integration to help users discover nearby friends. Powered by Firebase Firestore, Cloud Functions, and Google Cloud for a scalable, low-latency infrastructure supporting thousands of concurrent users.',
+    imageHint: 'messaging app',
+    tech: [
+      'Flutter & Dart',
+      'Firebase Firestore',
+      'Firebase Authentication',
+      'Firebase Cloud Messaging',
+      'Firebase Cloud Functions',
+      'Google Cloud Platform',
+      'WebRTC (Audio & Video Calls)',
+      'Google Maps API',
+      'Push Notifications',
+      'Real-time Chat & Sync',
+      'Message Scheduling Engine',
+      'Clean Architecture / Modular Structure',
+    ],
+    image: PlaceHolderImages.find((p) => p.id === 'cazuba')!,
+    links: [
+      { name: 'Android', url: 'https://play.google.com/store/apps/details?id=com.cazuba.android', icon: LinkIcon },
+      { name: 'iOS', url: 'https://apps.apple.com/app/cazuba/id1234567890', icon: Apple },
+    ],
+  },
+  
   {
     id: 'primetag',
     description: 'Developed and optimized multilingual Flutter applications with full Arabic support to enhance user engagement in the MENA region.',

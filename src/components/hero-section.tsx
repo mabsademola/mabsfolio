@@ -29,7 +29,7 @@ const HeroSection = () => {
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
           <Button asChild size="lg" variant="outline" className="font-bold">
-            <Link href="/placeholder-resume.pdf" target="_blank" download="Mabs-Ademola-Resume.pdf">
+            <Link href="https://drive.google.com/file/d/1pTovnN2WyBVBAHabSHlfWIMU-wBSQm-2/view?usp=drive_link" target="_blank" download="Mabs-Ademola-Front-End-Resume.pdf">
               <Download className="mr-2 h-5 w-5" /> Frontend Engineer Resume (Flutter)
             </Link>
           </Button>
