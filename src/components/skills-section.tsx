@@ -35,7 +35,7 @@ const SkillsSection = () => {
               <CardContent>
                 <ChartContainer config={chartConfig} className="w-full h-[250px]">
                   <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={category.skills} layout="vertical" margin={{ left: 10 }}>
+                    <BarChart data={category.skills} layout="vertical" margin={{ left: 10, right: 10 }}>
                       <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                       <XAxis type="number" hide />
                       <YAxis
@@ -47,7 +47,8 @@ const SkillsSection = () => {
                           fill: 'hsl(var(--foreground))',
                           fontSize: 14,
                         }}
-                        width={120}
+                        width={200}
+                        tickFormatter={(value) => value.length > 25 ? `${value.substring(0, 25)}...` : value}
                       />
                       <ChartTooltip
                         cursor={false}

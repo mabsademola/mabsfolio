@@ -3,6 +3,7 @@ import {
   Server,
   Database,
   Cloud,
+  Users,
   Code,
   Brush,
   Github,
@@ -18,7 +19,7 @@ import { PlaceHolderImages } from './placeholder-images';
 
 export const personalInfo = {
   name: 'Mabs Ademola',
-  title: 'Senior Flutter Developer & Full-Stack Engineer',
+  title: 'Senior Flutter Developer | Django & Full-Stack Engineer',
   location: 'Lagos, Nigeria',
   email: 'mabsademola@gmail.com',
   phone: '+234-915-339-6835',
@@ -34,9 +35,16 @@ export const personalInfo = {
       icon: Linkedin,
     },
   ],
+
+  // Hero / Landing section (third-person, short + authoritative)
+  headline:
+    "Mabs Ademola — Senior Flutter Developer with 5+ years building scalable cross-platform applications for 100,000+ users.",
+
+  // About Me section (first-person, detailed + personal)
   summary:
-    "A results-driven Senior Flutter Developer with over five years of expertise in architecting and scaling cross-platform mobile applications. With a strong history of leading development in startup environments, I have a proven ability to deliver high-quality, maintainable, and high-performing applications from concept to launch. My focus is on applying modern software architecture to build secure and scalable systems that bridge mobile and backend services effectively.",
+    "Hi, I’m Mabs 👋. For the past five years, I’ve been building and scaling mobile and web applications across industries like social commerce, on-demand services, e-commerce, social networking, and blockchain-enabled platforms. I’ve led projects from idea to production that now serve 100,000+ registered users, with multiple apps reaching 50K–70K active user bases and generating real commercial traction.\n\nI thrive in startup and distributed team environments, where I focus on clean architecture, CI/CD automation, and Agile workflows to ship secure, maintainable, and high-performing applications. Beyond just writing code, I enjoy bridging mobile and backend systems to ensure products are not only functional, but scalable and ready for growth. My work reflects a passion for turning ideas into impactful products that make a difference."
 };
+
 
 type SkillCategory = {
   name: string;
@@ -49,42 +57,63 @@ export const skills: SkillCategory[] = [
     name: 'Mobile Development',
     icon: Smartphone,
     skills: [
-      { name: 'Flutter & Dart', proficiency: 95 },
-      { name: 'Kotlin (Android)', proficiency: 70 },
-      { name: 'Swift (iOS)', proficiency: 60 },
-      { name: 'Clean Architecture', proficiency: 90 },
+      { name: 'Flutter & Dart (Cross-platform)', proficiency: 95 },
+      { name: 'Clean Architecture (Bloc, Riverpod, Provider)', proficiency: 90 },
+      { name: 'UI/UX Implementation & Animations', proficiency: 85 },
+      { name: 'Platform Integration (Camera, Maps, Push, Payments)', proficiency: 85 },
+      { name: 'Kotlin (Native Android)', proficiency: 70 },
+      { name: 'Swift (iOS)', proficiency: 65 },
     ],
   },
   {
     name: 'Backend Development',
     icon: Server,
     skills: [
-      { name: 'Django (Python)', proficiency: 85 },
-      { name: 'RESTful APIs', proficiency: 90 },
-      { name: 'WebSocket', proficiency: 75 },
+      { name: 'Django & Django REST Framework', proficiency: 90 },
+      { name: 'RESTful APIs & GraphQL', proficiency: 90 },
+      { name: 'Authentication & Security (JWT, OAuth2, RBAC)', proficiency: 85 },
+      { name: 'Real-time Systems (WebSocket, Django Channels)', proficiency: 80 },
+      { name: 'Task Queues & Background Jobs (Celery, Redis)', proficiency: 75 },
+      { name: 'Payment Integration (Stripe, Paystack, Flutterwave)', proficiency: 80 },
+      { name: 'Microservices & API Gateways', proficiency: 70 },
     ],
   },
   {
-    name: 'Databases',
+    name: 'Databases & Storage',
     icon: Database,
     skills: [
-      { name: 'PostgreSQL', proficiency: 80 },
-      { name: 'Firebase Firestore', proficiency: 85 },
-      { name: 'MongoDB', proficiency: 70 },
-      { name: 'SQLite / Hive', proficiency: 80 },
+      { name: 'PostgreSQL (Relational DB Design, Optimization)', proficiency: 80 },
+      { name: 'Firebase Firestore (Realtime, NoSQL)', proficiency: 85 },
+      { name: 'SQLite / Hive (Offline-first)', proficiency: 80 },
+      { name: 'MongoDB (Document DB)', proficiency: 70 },
+      { name: 'Caching (Redis, Memcached)', proficiency: 75 },
     ],
   },
   {
     name: 'Cloud & DevOps',
     icon: Cloud,
     skills: [
-      { name: 'AWS & GCP', proficiency: 75 },
-      { name: 'Firebase', proficiency: 90 },
-      { name: 'CI/CD (GitHub Actions)', proficiency: 85 },
-      { name: 'Docker', proficiency: 70 },
+      { name: 'Firebase (Auth, Hosting, Messaging, Analytics)', proficiency: 90 },
+      { name: 'CI/CD Automation (GitHub Actions, Bitrise)', proficiency: 85 },
+      { name: 'AWS (EC2, S3, RDS, Lambda)', proficiency: 75 },
+      { name: 'Google Cloud Platform (App Engine, Firestore)', proficiency: 75 },
+      { name: 'Docker & Containerization', proficiency: 70 },
+      { name: 'Monitoring & Logging (Sentry, CloudWatch)', proficiency: 70 },
+    ],
+  },
+  {
+    name: 'Collaboration & Workflow',
+    icon: Users,
+    skills: [
+      { name: 'Agile / Scrum Methodologies', proficiency: 85 },
+      { name: 'Git & Version Control (GitHub, GitLab, Bitbucket)', proficiency: 95 },
+      { name: 'Remote Team Collaboration (Slack, Jira, Trello)', proficiency: 90 },
+      { name: 'Technical Documentation (Swagger, Postman)', proficiency: 85 },
+      { name: 'Unit & Integration Testing', proficiency: 80 },
     ],
   },
 ];
+
 
 export const experience = [
   {
