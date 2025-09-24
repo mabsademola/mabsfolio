@@ -153,17 +153,68 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
   links: { name: string; url: string, icon: LucideIcon }[];
   image: ImagePlaceholder;
 })[] = [
+  // {
+  //   id: 'hafar',
+  //   description: 'A social dating app scaled to 70k+ users with a feature-rich experience including real-time chat and profile matching.',
+  //   imageHint: 'social app',
+  //   tech: ['Flutter', 'Django', 'PostgreSQL', 'Firebase', 'CI/CD'],
+  //   image: PlaceHolderImages.find((p) => p.id === 'hafar')!,
+  //   links: [
+  //       { name: 'Android', url: 'https://play.google.com/store/apps/details?id=com.orostech.hafar', icon: Smartphone },
+  //       { name: 'Web App', url: 'https://joinhafar.com', icon: AppWindow },
+  //       // { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
+  //   ],
+  // },
   {
     id: 'hafar',
-    description: 'A social dating app scaled to 70k+ users with a feature-rich experience including real-time chat and profile matching.',
+    description:
+      'A full-stack social and dating platform scaled from concept to over 70,000 registered users and 10,000+ daily actives. Delivered a feature-rich experience with real-time chat, push notifications, AI-driven profile matching, secure payments, and seamless cross-platform performance on Android, iOS, and Web. Successfully scaled backend systems to handle high-traffic workloads (20k+ daily requests) while maintaining a 99% crash-free rate through clean architecture, CI/CD automation, and performance optimization.',
     imageHint: 'social app',
-    tech: ['Flutter', 'Django', 'PostgreSQL', 'Firebase', 'CI/CD'],
+    tech: [
+      // Mobile
+      'Flutter & Dart',
+      'In-App Purchases',
+      'RevenueCat',
+  
+      // Backend
+      'Django', 
+      'Python',
+      'PostgreSQL',
+      'Redis',
+  
+      // Realtime / APIs
+      'WebSockets',
+      'REST APIs',
+      'GraphQL',
+  
+      // Infrastructure & DevOps
+      'DigitalOcean Droplets',
+      'DigitalOcean Spaces',
+      'DigitalOcean Managed Databases',
+      'Docker',
+      'NGINX',
+      'CI/CD (GitHub Actions)',
+      'AWS SES',
+  
+      // Firebase
+      'Firebase Authentication',
+      'Firebase Messaging (FCM)',
+  
+      // Payments
+      'Flutterwave',
+  
+      // Architecture & Testing
+      'Clean Architecture',
+      'Automated Testing (Unit & Integration)',
+    ],
     image: PlaceHolderImages.find((p) => p.id === 'hafar')!,
     links: [
-        { name: 'Live App', url: 'https://play.google.com/store/apps/details?id=com.orostech.hafar', icon: LinkIcon },
-        { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
+      { name: 'Android', url: 'https://play.google.com/store/apps/details?id=com.orostech.hafar', icon: Smartphone },
+      { name: 'Web App', url: 'https://joinhafar.com', icon: AppWindow },
+      // { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
     ],
   },
+  
   {
     id: 'sellio',
     description: 'A social commerce platform I founded, combining social feeds with a full e-commerce marketplace for a seamless user journey.',
@@ -189,13 +240,25 @@ export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
   },
   {
     id: 'dumyah',
-    description: 'An online shopping application with a focus on a smooth, intuitive user experience and multi-language support.',
+    description:
+      'Contributed as part of the core Flutter development team for Dumyah, the largest women-focused e-commerce platform in Jordan. Helped scale the Android and iOS apps to over 100,000+ active users by implementing a feature-based screen architecture, reusable component libraries, and performance optimizations. Worked on critical shopping flows, state management (GetX, Provider), localization, automated testing, and CI/CD pipelines to ensure a seamless, production-grade mobile experience.',
     imageHint: 'online shopping',
-    tech: ['Flutter', 'Firebase', 'REST APIs'],
+    tech: [
+      'Flutter & Dart',
+      'GetX',
+      'Provider',
+      'Feature-based Screen Architecture',
+      'REST APIs (frontend integration)',
+      'Localization / i18n',
+      'CI/CD (GitHub Actions / Bitrise)',
+      'Performance Optimization & Profiling',
+      'Reusable Component Library / Design Tokens',
+      'Analytics & Monitoring (Firebase Analytics / alternatives)',
+    ],
     image: PlaceHolderImages.find((p) => p.id === 'dumyah')!,
     links: [
-        { name: 'Live App', url: 'https://play.google.com/store/apps/details?id=com.dumyah.android', icon: LinkIcon },
-        { name: 'Repository', url: 'https://github.com/mabsademola', icon: GitBranch },
+      { name: 'Android', url: 'https://play.google.com/store/apps/details?id=com.dumyah.android', icon: LinkIcon },
+      { name: 'iOS', url: 'https://apps.apple.com/in/app/dumyah/id1590736513', icon: Apple },
     ],
   },
   {
