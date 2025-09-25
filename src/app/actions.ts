@@ -41,6 +41,14 @@ export async function submitContactForm(
   
   const { name, email, message } = validatedFields.data;
 
+  if (!process.env.RESEND_API_KEY) {
+    console.error('Resend API key is not configured.');
+    return {
+      message: 'The email service is not configured. Please contact the site administrator.',
+      success: false,
+    };
+  }
+
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const { data, error } = await resend.emails.send({
@@ -60,8 +68,12 @@ export async function submitContactForm(
 
   } catch (error) {
     console.error('Email sending failed:', error);
+    // Check for specific error messages if needed, but a generic one is fine for now.
+    if (error instanceof Error && error.message.includes('invalid_api_key')) {
+         return { message: 'The email service API key is invalid.', success: false };
+    }
     return {
-      message: 'Failed to send message. Please try again later.',
+      message: 'An unexpected error occurred while sending the message.',
       success: false,
     };
   }
