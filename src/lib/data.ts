@@ -122,30 +122,31 @@ export const experience = [
     company: 'OrosTech (Hafar Social)',
     role: 'Tech Lead | Senior Flutter & Backend Engineer',
     duration: 'Oct 2023 – Present',
-    description:
+    description: 
       'Led the end-to-end technical evolution of Hafar Social from its early Firebase-based prototype into a scalable production platform now serving over 40,000 active users. Orchestrated a zero-loss migration of millions of records from Firebase Firestore and MongoDB to a robust Django + PostgreSQL infrastructure, ensuring long-term scalability and reliability. Designed and implemented high-traffic server architectures capable of processing 20,000+ daily data transfer requests between mobile and backend systems. Beyond engineering, I established technical roadmaps, mentored new developers, and spearheaded feature planning including AI-driven integrations positioning the platform for continued growth and resilience in a high-demand startup environment.'
   },
   {
     company: 'Sellio',
-    role: 'Founder & Lead Flutter Developer',
-    duration: 'Apr 2024 – Dec 2024',
+    role: 'Founder & Full-Stack Engineer',
+    duration: 'Jan 2024 – Dec 2024',
     description:
-      'Conceptualized and developed a hybrid social e-commerce platform from the ground up. Led the front-end development for Android, iOS, and Web using Flutter, acquiring over 2,000 users in the first six months through strategic, user-centric design and organic growth initiatives.',
+      'Founded and led the development of Sellio, a social commerce platform blending the community-driven engagement of Instagram with the marketplace functionality of Amazon. Architected and built the full stack (Flutter, Django, PostgreSQL, AWS) to support features including real-time chat, community feeds, video uploads, product listings, escrow-based payments, and secure order management. Successfully grew the platform to 500+ signups within the first two weeks and onboarded 20+ paying customers in the first month post-launch, validating product-market fit and demonstrating early revenue potential.',
   },
   {
     company: 'Terkuaz Software Solution',
     role: 'Lead Flutter Developer',
     duration: 'Jan 2023 – May 2024',
     description:
-      'Led and mentored a team of developers in building two flagship on-demand service applications (Click & Click Provider). I established the architectural foundation using Clean Architecture with GetX and Dartz, ensuring the development of a scalable and maintainable codebase.',
+      'Led and mentored a team of four Flutter developers, driving the delivery of multiple production-grade mobile applications. Architected and launched two flagship on-demand service platforms (Click & Click Provider), enabling seamless connections between users and service providers (e.g., cleaners, home services) with robust real-time booking and payment flows. Established a scalable and maintainable foundation using Clean Architecture, GetX, and Dartz, which became the company’s standard for Flutter projects. Collaborated directly with Dumyah’s engineering team to accelerate development of their e-commerce platform, now serving over 100,000 active users across Android and iOS. Successfully shipped four additional apps during my tenure, ensuring consistent quality, performance, and adherence to best practices in mobile architecture.',
   },
   {
     company: 'Ultaininity Global Group',
     role: 'Flutter Developer',
     duration: 'Apr 2022 – Oct 2022',
     description:
-      'Contributed to the development of blockchain-based fintech applications, including a launchpad and NFT marketplace. My primary focus was on creating secure, high-performance mobile apps, successfully achieving a 99% crash-free session rate through meticulous testing and performance optimization.',
-  },
+      'Worked as part of a team of 5-6 Flutter developers to design, build, and maintain multiple mobile apps for Ultaininity Global. Developed core features including contact management modules, synchronization of user contact lists, secure user authentication flows, and integration of push notifications and background data sync. Collaborated closely with backend teams to debug API responses, optimize data loading, and improve UI responsiveness. Ensured code quality through unit testing and adhered to clean, modular architecture patterns. Helped improve app stability and reduce crash-rates, contributing to better user experience across Android and iOS.',
+  }
+  
 ];
 
 export const projects: (Omit<ImagePlaceholder, 'imageUrl'> & {
@@ -336,14 +337,24 @@ type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    name: 'Ahmad Al-Fahad',
-    title: 'CEO, Hafar Social',
+    name: 'Aseel Sawalmeh',
+    title: 'CEO, Terkuaz Software',
     avatar: {
-      imageUrl: 'https://picsum.photos/seed/1/100/100',
-      imageHint: 'male headshot'
+      imageUrl: 'https://picsum.photos/seed/5/100/100',
+      imageHint: 'female headshot'
     },
     quote:
-      "Mabs is a rare talent. He single-handedly transformed our early prototype into a production-ready platform that now serves over 40,000 users. His technical leadership, from backend architecture to mobile development, was instrumental in our success. He's a true full-stack powerhouse.",
+      "I’ve worked with Mabs across multiple companies and projects, from our early days at Primetag to now at Terkuaz Software. Over the years we’ve shipped several live products together, each serving thousands of users, and the reason I keep coming back is simple: trust. In this industry, it’s rare to find someone who not only delivers but also takes ownership of solving problems, even when the path isn’t obvious. With Mabs, I know that if I describe what needs to be done, he’ll figure out the best way to achieve it quickly and reliably. That trust is why he remains one of my go-to people whenever I need critical work done right.",
+  },
+  {
+    name: 'Anna Kowalski',
+    title: 'Product Owner, Skylite Solutions (Poland)',
+    avatar: {
+      imageUrl: 'https://picsum.photos/seed/6/100/100',
+      imageHint: 'female headshot'
+    },
+    quote:
+      "I’ve had the pleasure of working with Mabs over the past three years on several projects. What sets him apart is his ability to take a brief, run with it, and deliver exactly often exceeding expectations. He deeply understands product goals, asks the right questions early, and solves challenges proactively without needing micromanagement. His reliability and commitment make him someone you want on every project, especially when timelines are tight and quality matters.",
   },
   {
     name: 'Jana Saleh',
@@ -353,26 +364,6 @@ export const testimonials: Testimonial[] = [
       imageHint: 'female headshot'
     },
     quote:
-      "Working with Mabs was a fantastic experience. His contributions to the Dumyah app were critical in helping us scale to 100,000+ users. He's a proactive problem-solver and a great communicator, always focused on delivering a high-quality product.",
-  },
-  {
-    name: 'David Lee',
-    title: 'CTO, Terkuaz Software',
-    avatar: {
-      imageUrl: 'https://picsum.photos/seed/3/100/100',
-      imageHint: 'male headshot'
-    },
-    quote:
-      "Mabs's expertise in Flutter and Clean Architecture was a game-changer for our on-demand service apps. He not only led the development but also mentored the team, raising the bar for code quality and maintainability across the board.",
-  },
-  {
-    name: 'Fatima Ahmed',
-    title: 'Lead Designer, Sellio',
-    avatar: {
-      imageUrl: 'https://picsum.photos/seed/4/100/100',
-      imageHint: 'female headshot'
-    },
-    quote:
-      "As a founder, Mabs has a unique ability to bridge the gap between technical implementation and user experience. He brought the vision for Sellio to life with a beautiful and functional platform that users loved from day one.",
-  },
+      "Working with Mabs was a fantastic experience. His attention to detail is exceptional — what we designed in Figma was implemented pixel-perfect and the interaction polish matched our product vision. He thinks in systems, proposing architecture improvements that reduced rework and made the app easier to maintain. Best of all, he requires minimal direction: give him a goal and he delivers reliably, often exceeding expectations. His focus on quality helped us scale to 100,000+ users while keeping the product delightful and stable.",
+  } 
 ];
