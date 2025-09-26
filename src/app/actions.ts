@@ -22,6 +22,14 @@ export async function submitContactForm(
   prevState: ContactFormState,
   formData: FormData
 ): Promise<ContactFormState> {
+  if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 'your_api_key_here') {
+    console.error('Resend API key is not configured.');
+    return {
+      message: 'The email service is not configured. Please contact the site administrator.',
+      success: false,
+    };
+  }
+
   const validatedFields = contactFormSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
@@ -40,14 +48,6 @@ export async function submitContactForm(
   }
   
   const { name, email, message } = validatedFields.data;
-
-  if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 'your_api_key_here') {
-    console.error('Resend API key is not configured.');
-    return {
-      message: 'The email service is not configured. Please contact the site administrator.',
-      success: false,
-    };
-  }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
